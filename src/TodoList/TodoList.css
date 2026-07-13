@@ -1,0 +1,8 @@
+ul {
+    min-height: 50vh;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}

@@ -1,0 +1,56 @@
+
+body {
+    background-color: rgb(19, 19, 25);
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(0, 0, 37) 10%, rgb(16, 16, 16) 80%);
+}
+
+input {
+    width: 500px;
+    font-size: 30px;
+}
+
+li {
+    box-sizing: border-box;
+    padding: 45px;
+    color: white;
+    font-size: 24px;
+    height: 150px;
+    width: 50%;
+    border: 0.2rem rgba(255, 255, 255, 0.227) solid;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+}
+
+button {
+    font-size: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.completar {
+    background-color: rgba(172, 255, 47, 0.505);
+}
+
+.eliminar {
+    background-color: rgba(255, 0, 0, 0.46);
+}
+
+.agregar {
+    padding: 10px 15px;
+    background-color: rgba(0, 149, 255, 0.596);
+    
+}

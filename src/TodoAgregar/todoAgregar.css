@@ -1,0 +1,147 @@
+/* Fondo oscuro translúcido con desenfoque de fondo premium */
+.task-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 10, 12, 0.7);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* La tarjeta con tu color exacto rgb(19, 19, 25) */
+.task-modal-box {
+    background-color: rgb(19, 19, 25);
+    position: relative;
+    overflow: hidden;
+    padding: 32px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 420px;
+    /* Sombra profunda y un sutil borde interno "glow" */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.07) inset;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Línea de acento minimalista en la parte superior */
+.task-modal-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+/* Textos de la cabecera */
+.task-modal-header {
+    margin-bottom: 24px;
+}
+
+.task-modal-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+}
+
+.task-modal-subtitle {
+    margin: 6px 0 0 0;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+/* Formulario */
+.task-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Inputs con fondo integrado */
+.task-modal-input,
+.task-modal-textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.task-modal-input::placeholder,
+.task-modal-textarea::placeholder {
+    color: #475569;
+}
+
+/* Animación al hacer foco en los campos */
+.task-modal-input:focus,
+.task-modal-textarea:focus {
+    border-color: rgba(59, 130, 246, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.task-modal-textarea {
+    resize: none;
+    height: 85px;
+    line-height: 1.4;
+}
+
+/* Zona de botones */
+.task-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.task-modal-actions button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+/* Botón Cancelar discreto */
+.btn-cancel {
+    background-color: transparent;
+    color: #94a3b8;
+}
+
+.btn-cancel:hover {
+    color: #f1f5f9;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Botón de Guardar sólido y moderno */
+.btn-save {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.btn-save:hover {
+    background-color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.btn-save:active {
+    transform: translateY(0);
+}

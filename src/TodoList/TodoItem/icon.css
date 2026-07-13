@@ -1,0 +1,25 @@
+.Icon {
+    box-sizing: border-box;
+    width: 30px;
+    padding: 1px 5px;
+    padding-top: 5px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+
+.check {
+    background-color: rgb(204, 232, 162);
+}
+
+.delete {
+    background-color: rgb(221, 173, 173);
+}
+
+.Icon:hover .icon-svg-delete {
+    fill: rgb(131, 0, 0);
+}
+
+.Icon:hover .icon-svg-complete {
+    fill: rgb(14, 83, 1);
+}
